@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos flutuantes</title>
+    <style>
+        /**
+        Elementos flutuantes:
+        A propriedade float faz com que altere o fluxo dos elementos, fazendo os flutuar na direita ou esquerda.
+        Sai do fluxo normal do documento e vai para um outro fluxo. Os elementos vão ser como se não existisse. vai ser um novo fluxo flutuante
+
+
+        A propriedade clear: Limpa o fluxo flutuante num outro lado.
+        */
+        .conteudo {
+            background: blue;
+            border: 1px solid gray;
+            width: 150px;
+            height: 150px;
+            float: left;
+        }
+
+        .conteudo1 {
+            background: red;
+            border: 1px solid gray;
+            width: 150px;
+            height: 150px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    oi
+
+    <div class="conteudo">
+        Conteúdo 1
+    </div>
+
+    <div class="conteudo">
+        Conteúdo 2
+    </div>
+
+    <div class="conteudo">
+        Conteúdo 3
+    </div>
+
+    <div style="clear:both;"></div>
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla provident magnam debitis. Itaque, repudiandae? Inventore iste, magnam iusto consectetur mollitia ad enim omnis quo, nihil deleniti eveniet unde perferendis nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum dolorem a velit laborum unde, nesciunt omnis corrupti consequuntur culpa mollitia ullam voluptate pariatur harum excepturi. Quibusdam provident asperiores architecto?
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento (static, relative, absolute e fixed)</title>
+    <style>
+        /**
+        Posicionamentos:
+        
+        - 
+        - Estático:
+            - Posicionamento padrão dos elementos.
+        - Relativo:
+            - Precisamos usar propriedades de deslocamento: top, right, bottom, left
+            - Baseado na posição no fluxo normal do documento.
+        - Absoluto:
+            - O elemento sai completamente do fluxo normal do documento. As posições dos outros elementos não serão afetados.
+            - Os deslocamentos é baseado no container que tem um posicionamento alterado ou no body da página.
+        - Fixo:
+            - É igual ao absoluto, mas fica fixo na viewport
+
+        */
+
+        body {
+            background: #007fc7;
+        }
+
+        #container {
+            background: #fff;
+            width: 800px;
+            position: relative;
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+        h1 {
+            position: static;
+        }
+
+        p {
+            position: static;
+            width: 400px;
+        }
+
+        .relative {
+            border: 1px solid red;
+            position: relative;
+            top: 40px;
+            left: 100px;
+        }
+
+        .absolute {
+            position: absolute;
+            right: 0;
+            background: #f2f2f2;
+            border: 1px solid red;
+        }
+
+        .fixed {
+            position: fixed;
+            background: #f2f2f2;
+            border: 1px solid red; 
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Posicionamentos</h1>
+        <p>P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat vitae saepe culpa eveniet voluptatibus libero explicabo, sint optio ducimus, enim laboriosam dicta sed accusantium itaque? Perferendis similique iure quo molestiae.</p>
+        <p class="fixed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat vitae saepe culpa eveniet voluptatibus libero explicabo, sint optio ducimus, enim laboriosam dicta sed accusantium itaque? Perferendis similique iure quo molestiae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat vitae saepe culpa eveniet voluptatibus libero explicabo, sint optio ducimus, enim laboriosam dicta sed accusantium itaque? Perferendis similique iure quo molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ea omnis praesentium minima eligendi optio dolor voluptatem unde quod quibusdam sunt suscipit voluptatibus explicabo, cum possimus quam aliquam repudiandae culpa? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa aperiam ipsa reprehenderit soluta laudantium eius, commodi dolores assumenda dignissimos voluptate, voluptates quos expedita laborum rerum, repellendus magnam minima corrupti quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis beatae, error eum enim dolore, consequuntur pariatur eos deserunt iure quisquam a. Adipisci omnis corporis modi laborum ut dicta numquam fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sapiente impedit consectetur, quaerat neque similique eaque dolor ducimus? Modi, odit rem laboriosam suscipit quae veniam molestiae nihil natus facilis cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque facere dolorem magni incidunt, numquam ea facilis laboriosam suscipit perspiciatis, accusantium fugiat eius necessitatibus enim consectetur, vel in neque similique quisquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci laborum at hic repudiandae doloribus necessitatibus fuga quisquam, doloremque iusto quis, tempora odit rerum explicabo, odio nam atque eum voluptas nesciunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, pariatur? Maxime necessitatibus incidunt, deserunt odio perferendis, quibusdam doloremque nobis vel libero, earum autem? Facere quos necessitatibus corrupti voluptatibus vel molestias.</p>
+    </div>
+</body>
+</html>

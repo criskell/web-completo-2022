@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobrepondo elementos</title>
+    <style>
+        /**
+        Sobrepondo elementos
+
+        z-index: Qual elemento aparece primeiro.
+        Contexto de empilhamento: Controla quem aparece primeiro (empilhamento) utilizando z-index.
+        */
+
+        .conteudo1 {
+            border: 1px solid red;
+            background: orange;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 2;
+        }
+
+        .conteudo2 {
+            border: 1px solid red;
+            background: green;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            z-index: 1;
+        }
+
+        .conteudo3 {
+            border: 1px solid red;
+            background: yellow;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 160px;
+            left: 160px;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo1">
+        Conteúdo 1
+    </div>
+    <div class="conteudo2">
+        Conteúdo 2
+    </div>
+    <div class="conteudo3">
+        Conteúdo 3
+    </div>
+</body>
+</html>
