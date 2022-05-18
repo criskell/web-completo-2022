@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<p lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Seletores simples */
+        * {
+            color: yellow;
+        }
+
+        /* Seletor de tipo/elemento/tag */
+        h1 {
+            color: red;
+        }
+
+        /* Seletor de ID */
+        #id {
+            color: green;
+        }
+
+        /* Seletor de classe */
+        .classe {
+            color: blue;
+        }
+
+        /* Seletor de atributos */
+        /* Seletor de presença e valor */
+        [data-x] {
+            color: pink;
+        }
+
+        [data-x="x"] {
+            color: brown;
+        }
+
+        [data-x|="x"] {
+            color: antiquewhite;
+        }
+
+        /* Seletor de substrings */
+        [data-x~="x"] {
+            color: blueviolet;
+        }
+
+        [data-x^="x"] {
+            color: cyan;
+        }
+
+        [data-x$="x"] {
+            color: darkorchid;
+        }
+
+        /* Seletor de pseudoclasses */
+        a:link {
+            color: cyan;
+            text-decoration: none;
+        }
+
+        a:link::after {
+            content: '(já visitado)';
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        p:root {
+            color: blue !important;
+        }
+    </style>
+    <title>Seletores</title>
+</head>
+<body>
+    <div>
+        <h1>Título da página</h1>
+        <p>Parágrafo</p>
+    </div>
+
+    <a href="tgjeropjteot">oi</a>
+</body>
+</p>

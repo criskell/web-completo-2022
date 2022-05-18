@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Fira Code', sans-serif;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul a {
+            display: block;
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #f7b600;
+            background-image: url(imagens/menu.png);
+            padding-left: 40px;
+            background-repeat: no-repeat;
+            text-decoration: none;
+        }
+
+        ul a:hover, .selecionado, #home .home a, #sobre .sobre a {
+            background-color: #f99200;
+            background-position-x: right;
+            color: #fff;
+        }
+    </style>
+    <title>Barra de navegação vertical</title>
+</head>
+<body id="sobre">
+    <h1>Sobre</h1>
+
+    <ul>
+        <li class="home">
+            <a href="index.html">Home</a>
+        </li>
+        <li class="sobre">
+            <a href="sobre.html">Sobre</a>
+        </li>
+        <li class="servicos">
+            <a href="servicos.html">Serviços</a>
+        </li>
+        <li class="contato">
+            <a href="contato.html">Contato</a>
+        </li>
+    </ul>
+</body>
+</html>
