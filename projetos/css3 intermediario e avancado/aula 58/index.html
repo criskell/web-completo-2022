@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação de abas</title>
+    <style>
+       body {
+           font-family: "Trebuchet MS", Helvetica, sans-serif;
+       } 
+
+       ul {
+           margin: 0;
+           padding: 0;
+           list-style-type: none;
+           width: 720px;
+       }
+
+       ul li {
+           float: left;
+           border: 1px solid red;
+           background: url(../imagens/aba-direita.png) no-repeat top right;
+       }
+
+       li a {
+           display: block;
+           padding: 0 2em;
+           line-height: 3em;
+           text-decoration: none;
+           background: url(../imagens/aba-esquerda.png) no-repeat top left;
+           color: #fff;
+       }
+
+       ul a:hover {
+            color: #894a1f;
+       }
+
+       #atual {
+        background: url(../imagens/aba-direita-atual.png) no-repeat top right;
+       }
+
+       #atual a {
+        background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
+       }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#">Início</a>
+        </li>
+        <li>
+            <a href="#">Sobre</a>
+        </li>
+        <li>
+            <a href="#">Início</a>
+        </li>
+        <li>
+            <a href="#">Início</a>
+        </li>
+    </ul>
+</body>
+</html>
